@@ -1,0 +1,105 @@
+---
+layout: default
+---
+{% assign profile = site.data.resume.profile %}
+
+<section class="hero" id="top">
+  <div class="scanline" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div>
+      <p class="terminal-line"><span class="prompt">zhaolan@tinyml:~$</span> whoami</p>
+      <h1>{{ profile.name }}</h1>
+      <p class="hero-role">{{ profile.title }}</p>
+      <p class="hero-copy">{{ profile.summary }}</p>
+      <div class="actions" aria-label="Profile links">
+        <a class="button primary" href="mailto:{{ profile.email }}">Email me</a>
+        <a class="button" href="{{ profile.github }}" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="button" href="{{ profile.scholar }}" target="_blank" rel="noreferrer">Google Scholar</a>
+        <a class="button" href="{{ '/assets/files/Zhaolan_Huang_CV.pdf' | relative_url }}" download>Download CV</a>
+      </div>
+    </div>
+
+    <aside class="terminal-card" aria-label="Research profile summary">
+      <div class="terminal-bar"><span></span><span></span><span></span><small>research.profile</small></div>
+      <div class="terminal-body">
+        <p><span class="muted">field</span><strong>{{ profile.field }}</strong></p>
+        <p><span class="muted">focus</span><strong>{{ profile.focus }}</strong></p>
+        <p><span class="muted">stack</span><strong>{{ profile.stack }}</strong></p>
+        <p><span class="muted">location</span><strong>{{ profile.location }}</strong></p>
+        <p class="ready"><span>●</span> open to research collaboration</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div class="container content">
+  <section class="section" id="experience">
+    <div class="section-heading"><p>01 / career</p><h2>Professional Experience</h2></div>
+    <div class="timeline">
+      {% for item in site.data.resume.experience %}
+      <article class="timeline-item">
+        <div class="timeline-meta"><time>{{ item.period }}</time><span>{{ item.place }}</span></div>
+        <div>
+          <h3>{{ item.company }}</h3>
+          <p class="role">{{ item.role }}</p>
+          <ul>{% for bullet in item.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="section-heading"><p>02 / training</p><h2>Education</h2></div>
+    <div class="education-grid">
+      {% for item in site.data.resume.education %}
+      <article class="education-card">
+        <p class="date">{{ item.period }}</p>
+        <h3>{{ item.school }}</h3>
+        <p class="role">{{ item.degree }}</p>
+        {% if item.detail %}<p class="detail">{{ item.detail }}</p>{% endif %}
+        <p class="place">{{ item.place }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section" id="publications">
+    <div class="section-heading split">
+      <div><p>03 / selected work</p><h2>Publications</h2></div>
+      <a class="text-link" href="{{ profile.scholar }}" target="_blank" rel="noreferrer">View full list ↗</a>
+    </div>
+    <div class="publication-list">
+      {% for publication in site.data.resume.publications %}
+      <article class="publication">
+        <span class="publication-year">{{ publication.year }}</span>
+        <div>
+          <h3>{{ publication.title }}</h3>
+          <p>{{ publication.authors }}</p>
+          <p class="venue">{{ publication.venue }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section two-column" id="skills">
+    <div>
+      <div class="section-heading"><p>04 / toolkit</p><h2>Technical Skills</h2></div>
+      {% for group in site.data.resume.skills %}
+      <div class="skill-group">
+        <h3>{{ group[0] }}</h3>
+        <div class="tags">{% for skill in group[1] %}<span>{{ skill }}</span>{% endfor %}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <div>
+      <div class="section-heading"><p>05 / communication</p><h2>Languages</h2></div>
+      <dl class="language-list">
+        {% for item in site.data.resume.languages %}
+        <div><dt>{{ item.language }}</dt><dd>{{ item.level }}</dd></div>
+        {% endfor %}
+      </dl>
+    </div>
+  </section>
+</div>

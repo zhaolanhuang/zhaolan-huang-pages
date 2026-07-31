@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111210">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-mark" href="#top" aria-label="Back to top"><span class="prompt">$</span> zhaolan.huang</a>
+        <nav aria-label="Primary navigation">
+          <a href="#experience">experience</a>
+          <a href="#publications">publications</a>
+          <a href="#skills">skills</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">{{ content }}</main>
+
+    <footer>
+      <div class="container footer-inner">
+        <p><span class="prompt">$</span> echo "Thanks for visiting."</p>
+        <p>© {{ "now" | date: "%Y" }} Zhaolan Huang</p>
+      </div>
+    </footer>
+  </body>
+</html>

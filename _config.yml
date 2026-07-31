@@ -1,0 +1,24 @@
+title: Zhaolan Huang
+description: TinyML & Embedded ML Systems Researcher
+lang: en
+theme: jekyll-theme-hacker
+show_downloads: false
+
+url: ""
+baseurl: ""
+
+author:
+  name: Zhaolan Huang
+  email: zhaolan.huang@fu-berlin.de
+
+github_username: zhaolanhuang
+google_scholar: "https://scholar.google.com/citations?hl=en&user=zbjAXCgAAAAJ&view_op=list_works&sortby=pubdate"
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
