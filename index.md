@@ -110,3 +110,5 @@ Thesis: Pattern Recognition in the Capacitive Electrocardiogram and Reconstructi
 | Chinese | Native |
 | German | C1 - Professional |
 | English | Professional |
+
+![Badge](https://hitscounter.dev/api/hit?url=http%3A%2F%2Fzhaolan.khuang.xyz%2F&label=&icon=box&color=%23198754&message=&style=flat&tz=Europe%2FBerlin)
