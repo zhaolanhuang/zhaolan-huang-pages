@@ -4,7 +4,7 @@ lang: en
 theme: jekyll-theme-hacker
 show_downloads: false
 
-url: ""
+url: "https://zhaolan.khuang.xyz"
 baseurl: ""
 
 author:
@@ -13,6 +13,11 @@ author:
 
 github_username: zhaolanhuang
 google_scholar: "https://scholar.google.com/citations?hl=en&user=zbjAXCgAAAAJ&view_op=list_works&sortby=pubdate"
+
+github:
+  repository_url: "https://github.com/zhaolanhuang/"
+  project_tagline: TinyML & Embedded ML Systems Researcher
+  build_revision: main
 
 plugins:
   - jekyll-seo-tag

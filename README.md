@@ -19,4 +19,8 @@ Open `http://localhost:4000`.
 3. In **Settings → Pages**, choose **Deploy from a branch**.
 4. Select the default branch and `/ (root)`, then save.
 
-The CV content lives in `_data/resume.yml`; edit that file to update the page.
+## Edit the CV
+
+All profile and CV content lives in `index.md`. The file contains Markdown only;
+`_config.yml` is reserved for Jekyll and theme settings. Edit `index.md` and
+push the change; GitHub Pages will rebuild the site automatically.
