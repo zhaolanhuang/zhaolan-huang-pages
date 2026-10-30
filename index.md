@@ -2,12 +2,12 @@
 layout: default
 ---
 
-Research Assistant and PhD student at Freie Universität Berlin, building efficient, deployable machine learning systems for resource-constrained devices.
+Building efficient, deployable machine learning systems for resource-constrained devices.
 
 <!-- [Email me](mailto:zhaolan.huang@fu-berlin.de){: .btn } -->
 [Google Scholar](https://scholar.google.com/citations?hl=en&user=zbjAXCgAAAAJ&view_op=list_works&sortby=pubdate){: .btn }
 [LinkedIn](https://www.linkedin.com/in/zhaolan-huang/){: .btn }
-[CV]({{ '/assets/files/Zhaolan_Huang_CV.pdf' | relative_url }}){: .btn }
+[CV]({{ '/assets/files/CV_ZLH_2026.pdf' | relative_url }}){: .btn }
 
 |  | Open to collaboration |
 |:--|:--|
@@ -15,12 +15,14 @@ Research Assistant and PhD student at Freie Universität Berlin, building effici
 | **Stack** | C - Rust - IREE - LLVM/MLIR - TVM |
 | **Location** | Berlin, Germany |
 
-**Email**: zhaolan.huang[at]fu-berlin.de / zhalan94[at]gmail.com
+**Email**: zhalan94[at]gmail.com
+
+On-going project: [Oneliner](https://github.com/SimpleTinyML/oneliner), deploying efficient TinyML models on embedded devices with one-line code.
 
 
 ## Career
 
-### Freie Universität Berlin (2023 — Present)
+### Freie Universität Berlin (2023 — 2026)
 
 **Research Assistant** @ Berlin, Germany  
 
@@ -42,7 +44,7 @@ Research Assistant and PhD student at Freie Universität Berlin, building effici
 
 **Embedded Systems Engineer (freelance)** @ Guangzhou, China  
 
-- Developed software for bedside multiparameter and anesthesia monitors.
+- Led software development for bedside multiparameter and anesthesia monitors.
 - Developed a cardiopulmonary resuscitation training system.
 
 ## Publications [[Full list](https://scholar.google.com/citations?hl=en&user=zbjAXCgAAAAJ&view_op=list_works&sortby=pubdate)]
@@ -74,11 +76,11 @@ Research Assistant and PhD student at Freie Universität Berlin, building effici
 
 ## Education
 
-### Freie Universität Berlin (2023 — Present)
+### Freie Universität Berlin (2023 — 2026)
 
 **PhD Student in Computer Science** @ Berlin, Germany  
 
-Machine learning systems; model optimization and CI/CD on resource-constrained devices.
+Dissertation: Efficient Operation of Edge AI and Tiny Machine Learning on Heterogeneous Resource-Constrained Devices
 
 Supervisor: [Prof. Dr. Emmanuel Baccelli](https://emmanuelbaccelli.com/)
 
