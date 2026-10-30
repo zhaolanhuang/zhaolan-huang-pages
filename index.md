@@ -15,7 +15,7 @@ Building efficient, deployable machine learning systems for resource-constrained
 | **Stack** | C - Rust - IREE - LLVM/MLIR - TVM |
 | **Location** | Berlin, Germany |
 
-**Email**: zhalan94[at]gmail.com
+**Email**: zhaolan94[at]gmail.com
 
 On-going project: [Oneliner](https://github.com/SimpleTinyML/oneliner), deploying efficient TinyML models on embedded devices with one-line code.
 
